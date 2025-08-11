@@ -13,6 +13,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
+import Navbar from "@/components/nav/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,7 +44,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <main className="max-w-7xl mx-auto p-10 space-y-5">
+           <Navbar/>
           <Button> lets google</Button>
+          </main>
+          
         </ThemeProvider>
       </body>
     </html>
